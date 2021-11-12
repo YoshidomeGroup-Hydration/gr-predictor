@@ -1,4 +1,4 @@
-$ g(\textbf{r}) $ Predicter 
+gr Predicter 
 ====
 
 ## Requirement
@@ -14,11 +14,11 @@ Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
   `spliter = gpred.Prediction( pdb_dir, dx_dir, pred_area_center = np.array([x, y, z]), pred_area_range = w )`
 
-  * pdb_dir : PDBファイルのパス      
+  * `pdb_dir` : PDBファイルのパス      
   
-  * dx_dir : 出力するdxファイルのパス
+  * `dx_dir` : 出力するdxファイルのパス
   
-  * pred_area_center : 予測領域の中心座標 ( $x,y,z$ [$Å$] ) 
+  * `pred_area_center` : 予測領域の中心座標 ( x,y,z [Å] ) 
 
-  * pred_area_range : 予測領域の幅 ( $w$ [$Å$] )     
+  * `pred_area_range` : 予測領域の幅 ( w [Å] )     
   
