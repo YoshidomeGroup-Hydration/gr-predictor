@@ -69,7 +69,7 @@ class Prediction():
             self.pred_area_center = pred_area_center
             self.pred_area_range = pred_area_range
             # 局所予測
-            self.predicter_local(model_dir = ".model_1.h5")
+            self.predicter_local(model_dir = "model_1.h5")
         # 通常ver
         else:
             # 全体ボクセル化
@@ -77,9 +77,9 @@ class Prediction():
             self.lost = None # 作業用　RISMのグリッドサイズからどれだけ削ったor増した箱を作ったか記録する配列
             self.x_range, self.x_range, self.x_range = None, None, None  # 作業用　分割時のパラメータの記録
             self.hakosize = None #作業用　define_hakoで求めた箱の大きさの記録
-            self.predicter_normal(model_dir = ".model_1.h5")
+            self.predicter_normal(model_dir = "model_1.h5")
             
-        if dx_dir != None and self.g_pred != None:
+        if dx_dir != None:
             self.to_dx(self.g_pred, dx_dir)
         
     # 3DRISMのボックスの大きさを計算する 単位はボクセル
@@ -192,7 +192,7 @@ class Prediction():
             
         # 予測用と3DRISMのボックスサイズを比較し、各辺における差を記録
         lost = (hakosize - np.array(list(arr.shape[1:]))).astype(np.int32)
-        print(lost)
+        #print(lost)
         # 各辺における差を記録。複合時に使用
         self.lost = lost
         # 3辺について、3DRISMのボックスから削る大きさを求める。3DRISMより大きいときは0=削らない
@@ -202,7 +202,7 @@ class Prediction():
         # 差を更新して3DRISMよりどれだけ大きいか保存
         lost = (hakosize - np.array(list(arr.shape[1:]))).astype(np.int32)
         # 差に従って3DRISMのボックスに足す。渡された配列が水の場合1で埋め、タンパクの場合0で埋める
-        print(lost)
+        #print(lost)
         if arr.shape[0] == 1:
             x_up = np.ones((arr.shape[0], lost[0]//2, arr.shape[2], arr.shape[3]))
             y_up = np.ones((arr.shape[0], hakosize[0], lost[1]//2, arr.shape[3]))
@@ -261,7 +261,7 @@ class Prediction():
         aa = [tt[i] for i in range(0, x_range)]
         bb.append(np.concatenate(aa,axis=0))
         tt = np.stack(bb)
-        print(tt.shape)
+        #print(tt.shape)
         
         edge = (size-center)//2
         
@@ -303,7 +303,7 @@ class Prediction():
         if np.min([px,py,pz]) < 0 :
             print("ERROR : Invalid coordinate of center. Too far from the protein position.")
             return None
-        print(px,py,pz)
+        #print(px,py,pz)
         # 局所領域の幅（ボクセル）
         rangE = int(self.pred_area_range*2)
         hakosize=np.zeros((3)).astype(np.int32)
@@ -314,7 +314,7 @@ class Prediction():
             while(rangE*2  > size - edge):
                 size+=self.center
             hakosize[:]=size
-        print(hakosize)
+        #print(hakosize)
         local_area = np.zeros((3,2)) # ボクセル化に使う原子を決定する範囲　これ以内の原子を使う
         local_center_angstrom = self.R_Grid + np.array([px,py,pz])/2
         self.R_Grid = local_center_angstrom - hakosize/4 # 座標基準値の更新　多めに確保した予測領域分
