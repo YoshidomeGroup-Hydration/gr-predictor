@@ -37,7 +37,7 @@ class Prediction():
             # オリジナルの座標基準値を生成
             min_ax = (np.array([self.Atom_x.min(), self.Atom_y.min(), self.Atom_z.min()])-14.).astype(np.int32)
             max_ax = (np.array([self.Atom_x.max(), self.Atom_y.max(), self.Atom_z.max()])+14.).astype(np.int32)
-            self.R_Grid = min_ax
+            self.R_Grid = min_ax.astype(np.float64)
             self.n = ((max_ax-min_ax)*2).astype(np.int32)
     
         else:
