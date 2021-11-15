@@ -6,7 +6,7 @@ import time
 import json
 import pandas as pd
 import numpy as np
-import openbabel as ob
+from openbabel import openbabel as ob
 from numba import jit, njit, prange
 import dask.dataframe as dd
 
@@ -69,7 +69,7 @@ class Prediction():
             self.pred_area_center = pred_area_center
             self.pred_area_range = pred_area_range
             # 局所予測
-            self.predicter_local(model_dir = "D:/LAB/new/resUnet_ALSP/CheckPoint_1_198.h5")
+            self.predicter_local(model_dir = ".model_1.h5")
         # 通常ver
         else:
             # 全体ボクセル化
@@ -77,9 +77,9 @@ class Prediction():
             self.lost = None # 作業用　RISMのグリッドサイズからどれだけ削ったor増した箱を作ったか記録する配列
             self.x_range, self.x_range, self.x_range = None, None, None  # 作業用　分割時のパラメータの記録
             self.hakosize = None #作業用　define_hakoで求めた箱の大きさの記録
-            self.predicter_normal(model_dir = "D:/LAB/new/resUnet_ALSP/CheckPoint_1_198.h5")
+            self.predicter_normal(model_dir = ".model_1.h5")
             
-        if dx_dir != None:
+        if dx_dir != None and self.g_pred != None:
             self.to_dx(self.g_pred, dx_dir)
         
     # 3DRISMのボックスの大きさを計算する 単位はボクセル
