@@ -23,7 +23,7 @@ class Prediction():
     """
     水予測
     """
-    def __init__(self, pdb_dir, dx_dir, split_center=16, split_size=48, guv_dir=None, pred_area_center=np.array([None]), pred_area_range=-1):
+    def __init__(self, pdb_dir, dx_dir, split_center=16, split_size=48, guv_dir=None, pred_area_center=np.array([None]), pred_area_range=-1, model_dir="model_1.h5"):
         
         self.pdb_dir = pdb_dir
         if self.pdb_dir==None:print("Error ; PDB file dir")
@@ -69,7 +69,7 @@ class Prediction():
             self.pred_area_center = pred_area_center
             self.pred_area_range = pred_area_range
             # 局所予測
-            self.predicter_local(model_dir = "model_1.h5")
+            self.predicter_local(model_dir = model_dir)
         # 通常ver
         else:
             # 全体ボクセル化
@@ -77,7 +77,7 @@ class Prediction():
             self.lost = None # 作業用　RISMのグリッドサイズからどれだけ削ったor増した箱を作ったか記録する配列
             self.x_range, self.x_range, self.x_range = None, None, None  # 作業用　分割時のパラメータの記録
             self.hakosize = None #作業用　define_hakoで求めた箱の大きさの記録
-            self.predicter_normal(model_dir = "model_1.h5")
+            self.predicter_normal(model_dir = model_dir)
             
         if dx_dir != None:
             self.to_dx(self.g_pred, dx_dir)
