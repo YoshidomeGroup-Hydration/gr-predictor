@@ -6,7 +6,7 @@ import time
 import json
 import pandas as pd
 import numpy as np
-from openbabel import openbabel as ob
+import openbabel as ob
 from numba import jit, njit, prange
 import dask.dataframe as dd
 
