@@ -1,4 +1,4 @@
-gr Predicter （日本語のマニュアルはこちら）
+gr Predicter 
 ====
 
 ## Requirement
