@@ -18,7 +18,7 @@ Python 3.6~, Anaconda, openbabel, dask, tesorflow
   
   * `dx_dir` : Path to output file (dx format)
   
-  * `pred_area_center` : 予測領域の中心座標 ( x,y,z [Å] ) 
+  * `pred_area_center` : Central coordinate of the prediction region in the protein ( x,y,z [angstrom] ) 
 
   * `pred_area_range` : 予測領域の幅 ( w [Å] )    
 
