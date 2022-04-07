@@ -14,9 +14,9 @@ Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
   `spliter = gpred.Prediction( pdb_dir, dx_dir, pred_area_center = np.array([x, y, z]), pred_area_range = w )`
 
-  * `pdb_dir` : Path to PDB file      
+  * `pdb_dir` : Path to the PDB file      
   
-  * `dx_dir` : Path to output file (dx format)
+  * `dx_dir` : Path to the output file (dx format)
   
   * `pred_area_center` : Central coordinate of the prediction region in the protein ( x, y, and z [angstrom] ) 
 
