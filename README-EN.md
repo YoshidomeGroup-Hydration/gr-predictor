@@ -1,4 +1,4 @@
-gr Predicter 
+gr Predicter （日本語のマニュアルはこちら）
 ====
 
 ## Requirement
@@ -22,5 +22,4 @@ Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
   * `pred_area_range` : Width of the prediction region ( w [angstrom] )    
 
-* 
 
