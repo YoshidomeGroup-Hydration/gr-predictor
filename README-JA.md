@@ -4,8 +4,14 @@ gr Predicter
 ## Requirement
 Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
-## LICENSE
+## License
 “gr Predictor” is available under the GNU General Public License.
+
+## Citing this work
+If you use “gr Predictor”, please cite:
+gr Predictor: a Deep-Learning Model for Predicting the Hydration Structures around Proteins 
+Kosuke Kawama, Yusaku Fukushima, Mitsunori Ikeguchi, Masateru Ohta and, Takashi Yoshidome
+Submitted.
 
 ## Usage
 
