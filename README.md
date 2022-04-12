@@ -9,6 +9,7 @@ Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
 ## Citing this work
 If you use “gr Predictor”, please cite:
+
 gr Predictor: a Deep-Learning Model for Predicting the Hydration Structures around Proteins 
 Kosuke Kawama, Yusaku Fukushima, Mitsunori Ikeguchi, Masateru Ohta and, Takashi Yoshidome
 Submitted.
