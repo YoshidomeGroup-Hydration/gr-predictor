@@ -4,6 +4,9 @@ gr Predicter
 ## Requirement
 Python 3.6~, Anaconda, openbabel, dask, tesorflow
 
+## LICENSE
+“gr Predictor” is available under the GNU General Public License.
+
 ## Usage
 
 * Import modules
