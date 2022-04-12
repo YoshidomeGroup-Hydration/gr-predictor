@@ -1,4 +1,4 @@
-gr Predicter 
+gr Predictor 
 ====
 
 ## Requirement
