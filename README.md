@@ -17,7 +17,6 @@ gr Predictor: a Deep-Learning Model for Predicting the Hydration Structures arou
 Kosuke Kawama, Yusaku Fukushima, Mitsunori Ikeguchi, Masateru Ohta, and Takashi Yoshidome
 Submitted.
 ```
-
 ## Contact
 If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
 
