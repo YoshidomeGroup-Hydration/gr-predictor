@@ -18,8 +18,11 @@ Kosuke Kawama, Yusaku Fukushima, Mitsunori Ikeguchi, Masateru Ohta, and Takashi 
 Submitted.
 ```
 
+## Contact
+If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
 ## Usage
 
+## 使い方
 * モジュールのインポート
 
   `import guv_prediction as gpred`
