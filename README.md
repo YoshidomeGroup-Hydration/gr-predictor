@@ -4,7 +4,7 @@ gr Predictor
 "gr Predictor" is a deep-learning model rapidly estimating the water-oxygen distribution function around protein obtained by the 3D-RISM theory from the protein 3D structure. The computation is completed using either a single CPU (a few minutes) or a single GPU (tens of second).
 
 ## Requirement
-Python 3.6~, Anaconda, openbabel, dask, tesorflow
+Python 3.6–, Anaconda, openbabel, dask, tesorflow
 
 ## License
 “gr Predictor” is available under the GNU General Public License.
