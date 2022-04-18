@@ -15,7 +15,7 @@ If you use “gr Predictor”, please cite:
 ```
 gr Predictor: a Deep-Learning Model for Predicting the Hydration Structures around Proteins 
 Kosuke Kawama, Yusaku Fukushima, Mitsunori Ikeguchi, Masateru Ohta, and Takashi Yoshidome
-Submitted.
+bioRxiv 2022.04.XX.XXXX; doi: https://doi.org/10.1101/2022.04..XX.XXXX.
 ```
 ## Contact
 If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
