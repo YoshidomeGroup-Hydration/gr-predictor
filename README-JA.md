@@ -5,7 +5,8 @@ gr Predictor
 
 ## Requirement
 Python 3.6~, Anaconda, ~~openbabel~~, dask, tesorflow
-**New! google colaboratoryで使用できるようになりました。**
+
+**New! google colaboratoryで使用できるようになりました。(2022年12月27日)**
 
 ## License
 “gr Predictor” is available under the GNU General Public License.
