@@ -50,7 +50,7 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 
 3. Upload a PDB file (PDB.pdb) to /content/. Add hydrogens to the protein in advance.
 	
-4. Execute the following code. 
+4. Execute the following code.  
 	`spliter = gpred.Prediction("PDB.pdb", "PDB_pred.dx", model_dir="/content/gr-predictor/model_1.h5")`
 
 5. The water-oxygen distribution function is output to /content/PDB_pred.dx. Please download the dx file. This file can be seen using chimera or vmd.
