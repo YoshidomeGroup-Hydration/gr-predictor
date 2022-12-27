@@ -33,7 +33,7 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 
   * `pdb_dir` : Path to the PDB file      
   
-  * `dx_dir` : Path to the output file (dx format)
+  * `dx_dir` : Path to the output file of the water-oxygen distribution function around a protein (dx format)
   
   * `pred_area_center` : Central coordinate of the prediction region in the protein ( x, y, and z [angstrom] ) 
 
