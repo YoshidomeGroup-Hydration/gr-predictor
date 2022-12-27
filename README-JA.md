@@ -5,7 +5,7 @@ gr Predictor
 
 ## Requirement
 Python 3.6~, Anaconda, ~~openbabel~~, dask, tesorflow  
-**New! google colaboratoryで使用できるようになりました。(2022年12月27日)**
+**New! Google Colaboratoryで使用できるようになりました。(2022年12月27日)**
 
 ## License
 “gr Predictor” is available under the GNU General Public License.
@@ -38,7 +38,7 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 
   * `pred_area_range` : 予測領域の幅 ( w [Å] )    
 
-## Usage for google colaboratory
+## Usage for Google Colaboratory
 1. GPUを使用するので、「ランタイム」タブ→「ランタイムのタイプを変更」→「GPU」を選択する．
 
 2. colab上で以下を実行  
