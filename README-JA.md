@@ -22,6 +22,8 @@ Journal of Chemical Information and Modeling, Vol. 62, 4460 (2022).
 If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
 
 ## Usage
+* 事前にタンパク質には水素を付加して下さい。
+
 * モジュールのインポート
 
   `import guv_prediction as gpred`
