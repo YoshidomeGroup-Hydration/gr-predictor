@@ -22,6 +22,7 @@ Journal of Chemical Information and Modeling, Vol. 62, 4460 (2022).
 If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
 
 ## Usage
+* Add hydrogens to the protein in advance.
 
 * Import modules
 
