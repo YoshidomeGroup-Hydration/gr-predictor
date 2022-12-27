@@ -40,8 +40,13 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 
 ## Usage for google colaboratory
 1. GPUを使用するので、「ランタイム」タブ→「ランタイムのタイプを変更」→「GPU」を選択する．
-2. colab上で以下を実行
-	`!git clone https://github.com/YoshidomeGroup-Hydration/gr-predictor.git`
+2. colab上で以下を実行  
+	`!git clone https://github.com/YoshidomeGroup-Hydration/gr-predictor.git
+	%cd /content/gr-predictor
+	import guv_prediction_f as gpred`
+3. 
+	``
+4. 
 
 
 ## Usage for lab
