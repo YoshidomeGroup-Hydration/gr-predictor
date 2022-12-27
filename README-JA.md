@@ -39,6 +39,9 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
   * `pred_area_range` : 予測領域の幅 ( w [Å] )    
 
 ## Usage for google colaboratory
+1. GPUを使用するので、「ランタイム」タブ→「ランタイムのタイプを変更」→「GPU」を選択する．
+2. colab上で以下を実行
+	`!git clone https://github.com/YoshidomeGroup-Hydration/gr-predictor.git`
 
 
 ## Usage for lab
