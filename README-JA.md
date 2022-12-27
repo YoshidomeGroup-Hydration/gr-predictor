@@ -32,7 +32,7 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 
   * `pdb_dir` : PDBファイルのパス      
   
-  * `dx_dir` : 出力するdxファイルのパス
+  * `dx_dir` : 出力する水和分布（dxファイル）のパス
   
   * `pred_area_center` : 予測領域の中心座標 ( x,y,z [Å] ) 
 
@@ -52,7 +52,7 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 4. colab上で以下を実行
 	`spliter = gpred.Prediction("PDB.pdb", "PDB_pred.dx", model_dir="/content/gr-predictor/model_1.h5")`
 
-5. 実行後、しばらくすると/content/にPDB_pred.dxが出力されるので、これをダウンロードする。PDB_pred.dxはchimeraやvmdで見ることができる。
+5. 実行後、しばらくすると水和分布が/content/PDB_pred.dxに出力されので、これをダウンロードする。PDB_pred.dxはchimeraやvmdで見ることができる。
 
 ## Usage for lab
   
