@@ -53,4 +53,4 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 4. Execute the following code. 
 	`spliter = gpred.Prediction("PDB.pdb", "PDB_pred.dx", model_dir="/content/gr-predictor/model_1.h5")`
 
-5. 実行後、しばらくすると水和分布が/content/PDB_pred.dxに出力されので、これをダウンロードする。PDB_pred.dxはchimeraやvmdで見ることができる。
+5. The water-oxygen distribution function is output to /content/PDB_pred.dx. Please download the dx file. This file can be seen using chimera or vmd.
