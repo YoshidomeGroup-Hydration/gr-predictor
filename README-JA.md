@@ -45,11 +45,14 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
 	`!git clone https://github.com/YoshidomeGroup-Hydration/gr-predictor.git`  
 	`%cd /content/gr-predictor`  
 	`import guv_prediction_f as gpred`  
+	`%cd ../`
 
-3. 予め水素原子を付加したPDBファイルを/content/にアップロードする
-	``
-4. 
+3. 予め水素原子を付加したPDBファイルを/content/にアップロードする。ここでは、PDB.pdbとする。
+	
+4. colab上で以下を実行
+	`spliter = gpred.Prediction("PDB.pdb", "PDB_pred.dx", model_dir="/content/gr-predictor/model_1.h5")`
 
+5. 実行後、しばらくすると/content/にPDB_pred.dxが出力されるので、これをダウンロードする。PDB_pred.dxはchimeraやvmdで見ることができる。
 
 ## Usage for lab
   
