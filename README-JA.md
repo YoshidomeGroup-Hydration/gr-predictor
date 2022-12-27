@@ -5,6 +5,7 @@ gr Predictor
 
 ## Requirement
 Python 3.6~, Anaconda, ~~openbabel~~, dask, tesorflow
+**New! google colaboratoryで使用できるようになりました。**
 
 ## License
 “gr Predictor” is available under the GNU General Public License.
@@ -19,9 +20,6 @@ Journal of Chemical Information and Modeling, Vol. 62, 4460 (2022).
 ```
 ## Contact
 If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome.b1@tohoku.ac.jp.
-
-## New! google colaboratoryで使用できるようになりました。
-* 手順
 
 ## Usage
 * モジュールのインポート
@@ -39,6 +37,9 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
   * `pred_area_center` : 予測領域の中心座標 ( x,y,z [Å] ) 
 
   * `pred_area_range` : 予測領域の幅 ( w [Å] )    
+
+## Usage for google colaboratory
+
 
 ## Usage for lab
   
