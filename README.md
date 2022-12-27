@@ -38,3 +38,19 @@ If you have any questions, please contact Takashi Yoshidome at takashi.yoshidome
   * `pred_area_center` : Central coordinate of the prediction region in the protein ( x, y, and z [angstrom] ) 
 
   * `pred_area_range` : Width of the prediction region ( w [angstrom] )    
+
+## Usage for Google Colaboratory
+1. Select GPU from the Runtime tab.
+
+2. Execute the following codes.  
+	`!git clone https://github.com/YoshidomeGroup-Hydration/gr-predictor.git`  
+	`%cd /content/gr-predictor`  
+	`import guv_prediction_f as gpred`  
+	`%cd ../`
+
+3. Upload a PDB file (PDB.pdb) to /content/. Add hydrogens to the protein in advance.
+	
+4. Execute the following code. 
+	`spliter = gpred.Prediction("PDB.pdb", "PDB_pred.dx", model_dir="/content/gr-predictor/model_1.h5")`
+
+5. 実行後、しばらくすると水和分布が/content/PDB_pred.dxに出力されので、これをダウンロードする。PDB_pred.dxはchimeraやvmdで見ることができる。
