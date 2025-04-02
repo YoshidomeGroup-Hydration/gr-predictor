@@ -80,7 +80,8 @@ class Prediction():
             # 全体ボクセル化
             self.provoxel = self.proPerform()
             self.lost = None # 作業用　RISMのグリッドサイズからどれだけ削ったor増した箱を作ったか記録する配列
-            self.x_range, self.x_range, self.x_range = None, None, None  # 作業用　分割時のパラメータの記録
+            self.x_range, self.y_range, self.z_range = None, None, None  # 作業用　分割時のパラメータの記録
+            #self.x_range, self.x_range, self.x_range = None, None, None  # 作業用　分割時のパラメータの記録
             self.hakosize = None #作業用　define_hakoで求めた箱の大きさの記録
             self.predicter_normal(model_dir = model_dir)
             
@@ -182,7 +183,8 @@ class Prediction():
     # n : 3DRISMで作った箱の大きさ 単位はボクセル [xsize, ysize, zsize]
     # jitライブラリで計算　CPUを全部使う
     @staticmethod
-    @njit('f8[:,:,:,:](i4[:,], f8[:,], f8[:,], f8[:,], f8[:,], i8[:,], f8[:,:,])', parallel=True, cache=True)
+    @njit(parallel=True, cache=True)
+    #@njit('f8[:,:,:,:](i4[:,], f8[:,], f8[:,], f8[:,], f8[:,], i8[:,], f8[:,:,])', parallel=True, cache=True)
     def proVoxelizer_Ion(atype, Atom_x, Atom_y, Atom_z, R_Grid, n, local_area):
         
         # 各原子タイプにおけるファンデルワールス半径の定義
